@@ -24,7 +24,6 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'launchy'
-  gem 'simplecov'
   gem 'capybara'
   gem 'simplecov'
 end
