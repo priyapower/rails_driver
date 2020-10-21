@@ -300,5 +300,16 @@ RSpec.describe 'Spec Harness' do
 
       expect(json[:data][:attributes][:revenue].to_f.round(2)).to eq(43201227.80)
     end
+
+    it 'can get revenue of a single merchant' do
+      # Used the following to predict return
+      # Invoice.joins(:invoice_items, :transactions).merge(Transaction.unscoped.successful).merge(Invoice.unscoped.successful).where(merchant_id: 42).sum('unit_price * quantity')
+
+      response = conn("/api/v1/merchants/42/revenue").get
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json[:data][:id]).to be_nil
+      expect(json[:data][:attributes][:revenue].to_f.round(2)).to eq(532613.98)
+    end
   end
 end
