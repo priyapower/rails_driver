@@ -94,3 +94,8 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+# 
+# Capybara.register_driver :selenium do |app|
+#   Capybara::Selenium::Driver.new(app, :browser => :chrome)
+# end
+# Capybara.current_driver = :chrome

@@ -15,6 +15,10 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.4.1'
 gem 'faraday'
 gem 'figaro'
+gem 'selenium-webdriver'
+# gem 'chromedriver-helper'
+# gem 'rspec_gem'
+# gem 'rspec-expectations'
 
 group :development, :test do
   gem 'webdrivers'
