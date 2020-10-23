@@ -1,6 +1,8 @@
 # require 'rails_helper'
 #
 # RSpec.describe 'Items Extensions' do
+#   UPDATING YOUR API FOR ACTUAL USAGE: https://sourcey.com/articles/building-the-perfect-rails-api
+#     - Will probably need versioning and authentication 
 #   before :each do
 #     # Open chrome browser
 #     @driver = Selenium::WebDriver.for :chrome
